@@ -1,0 +1,11 @@
+﻿
+@model IEnumerable<ProjectWeek2.Models.ViewModel.Book>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@foreach(var book in Model ) {
+    <h1>@book.Id</h1>
+ }
+
